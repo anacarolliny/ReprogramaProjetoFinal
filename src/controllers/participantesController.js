@@ -32,38 +32,53 @@ const getAll = async(req, res) => {
 } 
 
 
-// const getProfissao = async (req, res) => {
-//     const profissao = await profissionalCollection.find({}, {
-//         _id: 0,
-//         profissao: 1
-//       });
-//       return res.status(200).send(profissao)
-// }
+const getIdade = async (req, res) => {
+    const idade = await participantesCollection.find({}, {
+        _id: 0,
+        idade: 1
+      });
+      return res.status(200).send(idade)
+}
 
-// const getArea = async (req, res) => {
-//     const profissao = await profissionalCollection.find({}, {
-//         _id: 0,
-//         area: 1
-//       });
-//       return res.status(200).send(profissao)
-// }
-// const getNome = async (req, res) => {
-//     const nome = await profissionalCollection.find({}, {
-//         _id: 0,
-//         nome: 1
-//       });
-//       return res.status(200).send(nome)
-// }
+const getEscolaridade = async (req, res) => {
+    const escolaridade = await participantesCollection.find({}, {
+        _id: 0,
+        escolaridade: 1
+      });
+      return res.status(200).send(escolaridade)
+}
+const getInformacoes = async (req, res) => {
+    const informacoesNecessarias = await participantesCollection.find({}, {
+        _id: 0,
+        informacoesNecessarias: 1
+      });
+      return res.status(200).send(informacoesNecessarias)
+}
+const getItens = async (req, res) => {
+    const itensNecessarios = await participantesCollection.find({}, {
+        _id: 0,
+        itensNecessarios: 1
+      });
+      return res.status(200).send(itensNecessarios)
+}
+
+const getGenero = async (req, res) => {
+    const genero = await participantesCollection.find({}, {
+        _id: 0,
+        genero: 1
+      });
+      return res.status(200).send(genero)
+}
 
 // const get = async (req, res) => {
 //     try {
 //         const { id } = req.params
 
-//         const profissional = await profissionalCollection.findById(id)
+//         const participantes = await participantesCollection.findById(id)
 
-//         return res.status(200).send(profissional)
+//         return res.status(200).send(participantes)
 //     } catch (error) {
-//         return res.status(404).send({ message: 'Profissional não encontrado' })
+//         return res.status(404).send({ message: 'participantes não encontrado' })
 //     }
 // }
 
@@ -78,41 +93,45 @@ const create = async (req, res) => {
     }
 }
 
-// const update = async (req, res) => {
-//     try {
-//         const { nome } = req.params
-//         const body = req.body
-//         const update = {new: true}
+const update = async (req, res) => {
+    try {
+        const { nome } = req.params
+        const body = req.body
+        const update = {new: true}
 
-//         const profissional = await profissionalCollection.findOneAndUpdate(nome, body, update)
-//         return res.status(200).send(profissional)
-//     } catch (error) {
-//         return res.status(404).send({message: 'Profissional para Atualização não encontrado'})
-//     }
-// }
+        const participante = await participantesCollection.findOneAndUpdate(nome, body, update)
+        return res.status(200).send(participante)
+    } catch (error) {
+        return res.status(404).send({message: 'Participante para Atualização não encontrado'})
+    }
+}
 
 
-// const remove = async (req, res) => {
-//     try {
-//         const { nome } = req.params
+const remove = async (req, res) => {
+    
+    try {
+        const { nome } = req.params
 
-//         await profissionalCollection.findOneAndDelete(nome)
+        await participantesCollection.findOneAndDelete(nome)
 
-//         return res.status(204).send("Deletado com sucesso falta fazer funcionar a mensagem")
-//     } catch (error) {
-//         return res.status(404).send({ message: 'Profissional para deletar não encontrado' })
-//     }
-// }
+        //return res.status(204).send("Deletado com sucesso falta fazer funcionar a mensagem")
+        return res.status(204).send({message: 'Dados deletados deletado'})
+    } catch (error) {
+        return res.status(404).send({ message: 'Participante para deletar não encontrado' })
+    }
+}
+
 
 
 module.exports = {
     getAll,
-    // get,
-    // getProfissao,
-    // getArea,
-    // getNome,
-    create
-    // update,
-    // remove
+    getIdade,
+    getEscolaridade,
+    getInformacoes,
+    getItens,
+    getGenero,
+    create,
+    update,
+    remove
     
 }

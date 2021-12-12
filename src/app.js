@@ -13,8 +13,8 @@ database.connect()
 app.use(cors())
 app.use(express.json())
 
-app.use('/profissionais', profissionaisRoute)
-app.use('/participantes', participantesRoute)
+app.use('/api/profissionais', profissionaisRoute)
+app.use('/api/participantes', participantesRoute)
 dotenv.config()
 
 app.get('/', (req, res) => {
