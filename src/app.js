@@ -18,7 +18,7 @@ app.use('/api/participantes', participantesRoute)
 dotenv.config()
 
 app.get('/', (req, res) => {
-    res.send('Seja Bem vindo(a) a minha API')
+    res.send('Seja Bem vindo(a)! ')
 })
 
 
