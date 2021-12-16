@@ -789,8 +789,556 @@ Exemplo:
 
 ---
 
+<div id='part'/>
+
+## 🏪 Listagem de Participantes
+Listagem de todos as participantes cadastradas na base de dados. 
+
+Método: `GET`
+
+### 📥 Requisição (rota):
+```
+http://localhost:4000/api/participantes
+```
+
+### 📤 Resposta:
+Exemplo:
+```json
+[
+    {
+        "_id": "61b64943ae66d6026d08cd8b",
+        "nome": "Mirella Joana Evelyn de Paula",
+        "dataNascimento": "18/01/1968",
+        "idade": "53",
+        "genero": "Feminino",
+        "escolaridade": "Fundamental",
+        "contato": "53998333917",
+        "dataDeEntrada": "22/06/2020",
+        "informacoesNecessarias": "Fato ocorrido no interior do Pará",
+        "itensNecessarios": "Remedios",
+        "informacoesAdicionais": "Roupas",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    },
+    {
+        "_id": "61b649afae66d6026d08cd8d",
+        "nome": "Aline Rosa Santos",
+        "dataNascimento": "15/08/1987",
+        "idade": "34",
+        "genero": "Feminino",
+        "escolaridade": "Médio",
+        "contato": "79986438550",
+        "dataDeEntrada": "15/04/2019",
+        "informacoesNecessarias": "Precisa urgente dar entrada em cirurgia plástica",
+        "itensNecessarios": "Ajuda com Psicólogia e Fisioterapia",
+        "informacoesAdicionais": "Remédios",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    },
+    {
+        "_id": "61b64a2eae66d6026d08cd8f",
+        "nome": "Pietro Carlos Bernardes",
+        "dataNascimento": "11/12/2003",
+        "idade": "18",
+        "genero": "Masculino",
+        "escolaridade": "Fundamental",
+        "contato": "92996122265",
+        "dataDeEntrada": "30/11/2020",
+        "informacoesNecessarias": "Estava atravessando com o barco do pai para ir a escola",
+        "itensNecessarios": "Advogado para conseguir direitos",
+        "informacoesAdicionais": "Roupas",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    },
+    {
+        "_id": "61b64a8fae66d6026d08cd91",
+        "nome": "Andreia Antonella Fogaça",
+        "dataNascimento": "07/09/1978",
+        "idade": "43",
+        "genero": "Feminino",
+        "escolaridade": "Médio",
+        "contato": "54986454855",
+        "dataDeEntrada": "05/04/2021",
+        "informacoesNecessarias": "Trabalhava junto com marido",
+        "itensNecessarios": "Precisa de tratamentos, muita dor na cabeça",
+        "informacoesAdicionais": "Perucas e remedios",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    }
+]
+```
+
+---
+
+
+<div id='part_filtro1'/>
+
+##  Filtra participantes pela idade ~falta colocar
+Filtra participantes pela idade
+
+Método: `GET`
+
+### 📥 Requisição (rota):
+```
+http://localhost:4000/api/participantes?idade=18
+```
+
+### 📜 Parâmetros (body):
+Query Params.
+```
+  Key: idade 
+  Value: 18 
+
+```
+### 📤 Resposta:
+Exemplo:
+```json
+[
+    {
+        "_id": "61b64a2eae66d6026d08cd8f",
+        "nome": "Pietro Carlos Bernardes",
+        "dataNascimento": "11/12/2003",
+        "idade": "18",
+        "genero": "Masculino",
+        "escolaridade": "Fundamental",
+        "contato": "92996122265",
+        "dataDeEntrada": "30/11/2020",
+        "informacoesNecessarias": "Advogado para conseguir direitos",
+        "itensNecessarios": "Roupas",
+        "informacoesAdicionais": "Está em ano letivo",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    }
+]
+```
+
+---
+
+<div id='part_filtro2'/>
+
+
+##  Filtra participantes pela Escolaridade ~falta colocar
+
+Filtra participantes pela Área de Atuação
+
+Método: `GET`
+
+### 📥 Requisição (rota):
+
+```
+http://localhost:4000/api/participantes?escolaridade=Fundamental
+```
+
+### 📜 Parâmetros (body):
+
+Query Params.
+
+```
+  Key: escolaridade 
+  Value: Fundamental 
+
+```
+
+### 📤 Resposta:
+
+Exemplo:
+
+```json
+
+[
+    {
+        "_id": "61b64943ae66d6026d08cd8b",
+        "nome": "Mirella Joana Evelyn de Paula",
+        "dataNascimento": "18/01/1968",
+        "idade": "53",
+        "genero": "Feminino",
+        "escolaridade": "Fundamental",
+        "contato": "53998333917",
+        "dataDeEntrada": "22/06/2020",
+        "informacoesNecessarias": "Fato ocorrido no interior do Pará",
+        "itensNecessarios": "Remedios",
+        "informacoesAdicionais": "Roupas",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    },
+    {
+        "_id": "61b64a2eae66d6026d08cd8f",
+        "nome": "Pietro Carlos Bernardes",
+        "dataNascimento": "11/12/2003",
+        "idade": "18",
+        "genero": "Masculino",
+        "escolaridade": "Fundamental",
+        "contato": "92996122265",
+        "dataDeEntrada": "30/11/2020",
+        "informacoesNecessarias": "Advogado para conseguir direitos",
+        "itensNecessarios": "Roupas",
+        "informacoesAdicionais": "Está em ano letivo",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    }
+
+]
+    
+```
+
+---
+
+<div id='part_filtro3'/>
+
+
+##  Filtra participantes pelo Genero ~falta colocar
+
+Filtra participantes pelo Genero 
+
+Método: `GET`
+
+### 📥 Requisição (rota):
+
+```
+http://localhost:4000/api/participantes?genero=Masculino
+```
+
+### 📜 Parâmetros (body):
+
+Query Params.
+
+```
+  Key: genero 
+  Value: Masculino
+
+```
+
+### 📤 Resposta:
+
+Exemplo:
+
+```json
+[
+    {
+        "_id": "61b64a2eae66d6026d08cd8f",
+        "nome": "Pietro Carlos Bernardes",
+        "dataNascimento": "11/12/2003",
+        "idade": "18",
+        "genero": "Masculino",
+        "escolaridade": "Fundamental",
+        "contato": "92996122265",
+        "dataDeEntrada": "30/11/2020",
+        "informacoesNecessarias": "Advogado para conseguir direitos",
+        "itensNecessarios": "Roupas",
+        "informacoesAdicionais": "Está em ano letivo",
+        "criadoEm": "2021-12-12T17:41:58.710Z",
+        "atualizadoEm": "2021-12-12T17:41:58.710Z",
+        "__v": 0
+    }
+]
+```
+
+---
+
+<div id='part_retr1'/>
+
+
+##  Retorna todas as idades cadastradas ~falta colocar
+
+Retorna apenas as idades cadastradas
+
+Método: `GET`
+
+### 📥 Requisição (rota):
+
+```
+http://localhost:4000/api/profissionais/idades
+```
+
+### 📤 Resposta:
+
+Exemplo:
+
+```json
+
+[
+    {
+        "idade": "53"
+    },
+    {
+        "idade": "34"
+    },
+    {
+        "idade": "18"
+    },
+    {
+        "idade": "43"
+    }
+]
+
+    
+```
+
+
+
+---
+
+<div id='part_retr2'/>
+
+
+##  Retorna apenas o campo escolaridade dos participantes cadastrados ~falta colocar
+
+Retorna apenas o campo escolaridade dos participantes cadastrados
+Método: `GET`
+
+### 📥 Requisição (rota):
+
+```
+http://localhost:4000/api/participantes/escolaridade
+```
+
+### 📤 Resposta:
+
+Exemplo:
+
+```json
+[
+    {
+        "escolaridade": "Fundamental"
+    },
+    {
+        "escolaridade": "Médio"
+    },
+    {
+        "escolaridade": "Fundamental"
+    },
+    {
+        "escolaridade": "Médio"
+    }
+]
+```
+
+---
+
+<div id='part_retr3'/>
+
+
+##  Retorna apenas o campo com as informações dos participantes cadastrados ~falta colocar
+
+Retorna todas as informações na base de dados
+Método: `GET`
+
+### 📥 Requisição (rota):
+
+```
+http://localhost:4000/api/participantes/informacoes
+```
+
+### 📤 Resposta:
+
+Exemplo:
+
+```json
+[
+    {
+        "informacoesNecessarias": "Fato ocorrido no interior do Pará",
+        "itensNecessarios": "Remedios",
+        "informacoesAdicionais": "Roupas"
+    },
+    {
+        "informacoesNecessarias": "Precisa urgente dar entrada em cirurgia plástica",
+        "itensNecessarios": "Ajuda com Psicólogia e Fisioterapia",
+        "informacoesAdicionais": "Remédios"
+    },
+    {
+        "informacoesNecessarias": "Estava atravessando com o barco do pai para ir a escola",
+        "itensNecessarios": "Advogado para conseguir direitos",
+        "informacoesAdicionais": "Roupas"
+    },
+    {
+        "informacoesNecessarias": "Trabalhava junto com marido",
+        "itensNecessarios": "Precisa de tratamentos, muita dor na cabeça",
+        "informacoesAdicionais": "Perucas e remedios"
+    }
+]
+```
+
+---
+
+<div id='part_retr4'/>
+
+
+##  Retorna apenas o camp genero dos participantes cadastrados ~falta colocar
+
+Retorna apenas o campo participante cadastrados
+Método: `GET`
+
+### 📥 Requisição (rota):
+
+```
+http://localhost:4000/api/participantes/genero
+```
+
+### 📤 Resposta:
+
+Exemplo:
+
+```json
+[
+    {
+        "genero": "Feminino"
+    },
+    {
+        "genero": "Feminino"
+    },
+    {
+        "genero": "Masculino"
+    },
+    {
+        "genero": "Feminino"
+    }
+]
+```
+
+---
+
+<div id='cadastro_part'/>
+
+##  Cadastro de participantes
+Cadastrar participantes na base de dados.</br>
+Essa rota possui as seguintes validações:
+
+Método: `POST`
+
+### 📥 Requisição (rota):
+```
+http://localhost:4000/api/participantes 
+```
+
+### 📜 Parâmetros (body):
+*Parâmetros obrigatórios.
+
+```json
+{
+    "nome": "Carla Martins",
+    "dataNascimento": "13/09/2013",
+    "idade": "21",
+    "genero": "Feminino",
+    "escolaridade": "Fundamental",
+    "contato": "9999-9999",
+    "dataDeEntrada":"22/06/2020",
+    "informacoesNecessarias":"Precisando de cuidados terapeuticos, psicológicos e fisícos",
+    "itensNecessarios":"Remedios",
+    "informacoesAdicionais":"Roupas"
+}
+```
+
+### 📤 Resposta:
+Exemplo:
+```json
+{
+  
+ 	 "id": ,
+ 	"nome": "Carla Martins",
+    "dataNascimento": "13/09/2013",
+    "idade": "21",
+    "genero": "Feminino",
+    "escolaridade": "Fundamental",
+    "contato": "9999-9999",
+    "dataDeEntrada":"22/06/2020",
+    "informacoesNecessarias":"Precisando de cuidados terapeuticos, 			psicológicos e fisícos",
+    "itensNecessarios":"Remedios",
+    "informacoesAdicionais":"Roupas"	
+   "criadoEm": "2021-12-13T14:54:10.109Z",
+   "atualizadoEm": "2021-12-13T14:54:10.109Z",
+   "__v": 0
+}
+```
+
+---
+
+<div id='atualizacao_cadastro_part'/>
+
+##  Atualizar o cadastro"
+Altera informações de um participante
+</br>
+
+
+Método: `PUT`
+
+### 📥 Requisição (rota):
+```
+http://localhost:4000/api/participante/:nome
+
+### 📜 Parâmetros (body):
+*Parâmetros obrigatórios.
+
+​```json
+{
+    "nome": "Carla Martins Ferreira",
+    "dataNascimento": "13/09/2013",
+    "idade": "21",
+    "genero": "Feminino",
+    "escolaridade": "Fundamental",
+    "contato": "8788-9999",
+    "dataDeEntrada":"22/06/2020",
+    "informacoesNecessarias":"Precisando de cuidados médicos, psicológicos e fisícos",
+    "itensNecessarios":"Remedios",
+    "informacoesAdicionais":"Roupas"
+}
+```
+
+### 📤 Resposta:
+Exemplo:
+```json
+{
+  {
+    "nome": "Carla Martins Ferreira",
+    "dataNascimento": "13/09/2013",
+    "idade": "21",
+    "genero": "Feminino",
+    "escolaridade": "Fundamental",
+    "contato": "8788-9999",
+    "dataDeEntrada":"22/06/2020",
+    "informacoesNecessarias":"Precisando de cuidados médicos, psicológicos e fisícos",
+    "itensNecessarios":"Remedios",
+    "informacoesAdicionais":"Roupas",
+   "criadoEm": "2021-12-13T14:54:10.109Z",
+   "atualizadoEm": "2021-12-13T14:54:10.109Z",
+   "__v": 0
+}
+}
+```
+
+---
+
+<div id='deletar_part'/>
+
+## 🗑 Deletar cadastro da participante
+Excluir um cadastro 
+
+Método: `DELETE`
+
+### 📥 Requisição (rota):
+```
+http://localhost:4000/api/participante/:nome
+```
+
+
+### 📤 Resposta:
+Exemplo:
+```
+"Participante removido."
+```
+
+---
+
+
 
 <div id='agradecimentos'/> 
+
 
 
 ---
@@ -801,5 +1349,5 @@ Exemplo:
 
 
 
-<div id='orientadores'/>
+
 
