@@ -1,5 +1,5 @@
 <p align="center">
-<img src='C:\Users\T-Gamer\Downloads\mix-raca-meninas-de-maos-dadas-em-pe-juntas-movimento-de-empoderamento-feminino-conceito-de-poder-feminino-isolado_48369-34041.webp' title="Banner">
+<img src='https://i.imgur.com/Sq7fZZ7.png' title="Banner">
 </p>
 
 
@@ -7,15 +7,26 @@
 
 ># Curae - Apoio Mutuo aos seus semelhantes
 
-Api que visa trazer mais visibilidade para a ONG e suas integrantes, sendo o elo/ ponto entre profissionais voluntários e participantes do projeto.
+Api que visa trazer mais visibilidade para a ONG e suas participantes, sendo o elo/ ponto entre profissionais voluntários e participantes do projeto.
+
+What is Lorem Ipsum?
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 
 ># 🏪 API - 
 
-## índice
+
+Why do we use it?
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+## Índice do Projeto
 
 * [Proposta](#proposta)
-* [Introdução](#introducao)<br>
-  * [Objetivo](#objetivo)
+* [Introdução](#introducao)
+* [Objetivo](#objetivo)
 * [Tecnologias Utilizadas](#tecnologias)
 * [Arquitetura MVC](#arquitetura)
 * [Instruções para utilização da API](#aplicacao)
@@ -32,7 +43,7 @@ A proposta desse projeto é desenvolver um software para demonstrar os nossos co
 
 Na ocasião refleti sobre qual assunto ou causa poderia tentar apoiar e talvez trazer algum tipo de solução ou até visibilidade para a situação e atual história de cada uma das participantes.
 
-
+---
 
 <div id='introducao'/>
 
@@ -42,6 +53,8 @@ Na ocasião refleti sobre qual assunto ou causa poderia tentar apoiar e talvez t
 Com essa realidade eu perguntava para minha mãe se a ONG tinha uso de tecnologia para agilizar o processo de auxilio dessas participantes, e a resposta foi que apenas utilizavam arquivos totalmente ainda de papel.
 
 Desde aquele momento fiquei refletindo sobre o assunto, e com este projeto agora tive a ideia de tentar pensar em algo que fosse util para essas pessoas envolvidas : participantes, voluntários e possivelmente empresas.
+
+---
 
 <div id='objetivo'/>
 
@@ -58,10 +71,11 @@ Desde aquele momento fiquei refletindo sobre o assunto, e com este projeto agora
 
  - Atualizar cadastro de profissionais voluntários.
 
-   
+---
 
 <div id='tecnologias'/>
- ## 🛠 Tecnologias utilizadas 
+
+ ## 🛠Tecnologias utilizadas 
 Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao contexto desse desenvolvimente e elas são:
 
 [<img title="JavaScript" width="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript):  linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
@@ -81,9 +95,11 @@ Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao context
 
 [<img title=".env" width="20" src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png"> .env](https://www.npmjs.com/package/dotenv): é a ferramenta utilizada para orquestrar as variáveis ambiente de um projeto. 
 
+---
 
 <div id='arquitetura'/>
-## 📁 Arquitetura MVC 
+
+## 📁Arquitetura MVC 
 
 ```
  📁 ProjetoFinalReprograma
@@ -102,7 +118,7 @@ Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao context
    |    |- 📁 models
    |         |- 📑 participantesSchema.js
    |         |- 📑 profissionaisSchema.js
-   |         |- 📑 livro.js
+   |         
    |
    |    |- 📁 routes
    |         |- 📑 participantesRoutes.js 
@@ -122,7 +138,8 @@ Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao context
    |- 📑 server.js
 
 ```
-<br>
+         
+---
 
 <div id='aplicacao'/>
 
@@ -158,9 +175,11 @@ npm start
 Após esse comando o servidor irá inicializar e então aparecerá as mensagens que esse processo foi realizado com sucesso em seguida aparecerá dois links, como na imagem a seguir, sendo um link referente a aplicação e outra ao swagger, um atalho para acessá-las no browser e ter uma melhor visualização basta estar com o mouse sobre o link desejado e digitar `ctrl + click`.
 
 <p align="center">
-<img src="C:\Users\T-Gamer\ProjetoFinalReprograma\src\img\img1.png">
+<img src="https://i.imgur.com/c00dCS9.png">
 </p>
 
+
+---
 
 <div id='rotas'/>
 
@@ -205,7 +224,7 @@ Para caso o usuário queira realizar a verificação do REST no Postman, Insomni
 <div id='prof'/>
 
 
-## 🏪 Listagem de Profissionais
+## Listagem de Profissionais
 Listagem de todos os profissionais cadastrados na base de dados. 
 
 Método: `GET`
@@ -365,6 +384,7 @@ Exemplo:
 
 ---
 
+<div id='prof_filtro2'/>
 
 
 ##  Filtra profissionais pela Área de Atuação ~falta colocar
@@ -422,6 +442,7 @@ Exemplo:
 
 ---
 
+<div id='prof_filtro3'/>
 
 
 ##  Filtra profissionais pelo Nome ~falta colocar
@@ -466,6 +487,9 @@ Exemplo:
 ```
 
 ---
+
+<div id='prof_retr1'/>
+
 
 ##  Retorna apenas as profissoes cadastradas ~falta colocar
 
@@ -529,6 +553,9 @@ Exemplo:
 
 ---
 
+<div id='prof_retr2'/>
+
+
 ##  Retorna apenas as Áreas de Atuação cadastradas ~falta colocar
 
 Retorna apenas as Áreas de Atuação cadastradas
@@ -588,6 +615,9 @@ Exemplo:
 
 ---
 
+<div id='prof_retr3'/>
+
+
 ##  Retorna apenas os nomes dos profissionais cadastrados ~falta colocar
 
 Retorna apenas os nomes dos profissionais cadastrados
@@ -641,9 +671,10 @@ Exemplo:
 ---
 
 
-<div id='clientes'/>
+<div id='cadastro_prof'/>
 
-## 👨‍👩‍👧‍👦 Cadastro de clientes
+
+## 🧾Cadastro de clientes
 Cadastrar profissionais na base de dados.</br>
 Essa rota possui as seguintes validações:
 - Todos os campos devem ser preenchidos
@@ -657,8 +688,8 @@ http://localhost:4000/api/profissionais
 
 ### 📜 Parâmetros (body):
 *Parâmetros obrigatórios.
-
 ```json
+
 {
    "nome": "France Santos ",
    "contato": "9999-9999",
@@ -689,9 +720,9 @@ Exemplo:
 
 ---
 
-<div id='statusRetirado'/>
+<div id='atualizacao_cadastro_prof'/>
 
-## 🚚 Atualizar o cadastro"
+## 🧾Atualizar o cadastro"
 Altera informações de um profissional
 </br>
 
@@ -736,7 +767,8 @@ Exemplo:
 
 ---
 
-<div id='excluirProdutoPedido'/>
+<div id='deletar_prof'/>
+
 
 ## 🗑 Deletar cadastro do profissional
 Excluir um cadastro 
@@ -759,6 +791,9 @@ Exemplo:
 
 
 <div id='agradecimentos'/> 
+
+
+---
 
 ## 👨‍👩‍👧‍👦 Agradecimentos  
 
