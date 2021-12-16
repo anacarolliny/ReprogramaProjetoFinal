@@ -50,7 +50,9 @@ const getEscolaridade = async (req, res) => {
 const getInformacoes = async (req, res) => {
     const informacoesNecessarias = await participantesCollection.find({}, {
         _id: 0,
-        informacoesNecessarias: 1
+        informacoesNecessarias: 1,
+        itensNecessarios: 1,
+        informacoesAdicionais:1
       });
       return res.status(200).send(informacoesNecessarias)
 }
