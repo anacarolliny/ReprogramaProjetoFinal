@@ -181,6 +181,9 @@ Após esse comando o servidor irá inicializar e então aparecerá as mensagens 
 <img src="https://i.imgur.com/w8bVJGr.png">
 </p>
 
+Caso seu acesso seja via a URL, poderá utilizar o Swagger, a ferramenta de documentação mas via link.
+
+
 Para acessar via Heroku, acesse o [link da API](https://reprogramaprojetofinal.herokuapp.com/)
 ---
 
@@ -229,7 +232,7 @@ Método: `GET`
 
 ### 📥 Requisição (rota):
 ```
-http://localhost:4000/api/profissionais ou https://reprogramaprojetofinal.herokuapp.com/api/profissionais
+http://localhost:4000/api/profissionais 
 ```
 
 ### 📤 Resposta:
