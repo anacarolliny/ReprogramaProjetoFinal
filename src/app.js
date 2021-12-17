@@ -19,12 +19,12 @@ app.use(bodyParser.urlencoded({extended:false}))
 
 app.use('/api/profissionais', profissionaisRoute)
 app.use('/api/participantes', participantesRoute)
-app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 dotenv.config()
 
-app.get('/', (req, res) => {
-    res.send('Seja Bem vindo(a)! ')
-})
+// app.get('/', (req, res) => {
+//     res.send('Seja Bem vindo (a)! ')
+// })
 
 
 

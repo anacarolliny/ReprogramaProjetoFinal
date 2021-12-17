@@ -2,8 +2,8 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "API Curae",
-    "description": "Essa API auxiliará no processo de modernização de informações para a ONG"
+    "title": "API Elo",
+    "description": "Api que visa trazer uma dinâmica mais consistente para a ONG e suas participantes, sendo o “elo”; ponto entre a ONG, profissionais voluntários e participantes do projeto. "
   },
   "host": "localhost:4000",
   "basePath": "/",
@@ -14,18 +14,7 @@
   "consumes": [],
   "produces": [],
   "paths": {
-    "/": {
-      "get": {
-        "tags": [],
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
+   
     "/api/profissionais/": {
       "get": {
         "tags": [],
