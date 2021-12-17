@@ -86,9 +86,12 @@ const update = async (req, res) => {
 
 const remove = async (req, res) => {
     try {
-        const { nome } = req.params
 
-        await profissionalCollection.findOneAndDelete(nome)
+        const { nome } =  await profissionalCollection.findOneAndDelete(req.params)
+        // const { nome } = req.params
+
+        // await profissionalCollection.findOneAndDelete(nome)
+        
 
         return res.status(204).send("Deletado com sucesso falta fazer funcionar a mensagem")
     } catch (error) {

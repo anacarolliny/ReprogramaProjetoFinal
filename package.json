@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "swagger-autogen": "node swagger.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,10 @@
     "express": "^4.17.1",
     "mongodb": "^4.2.1",
     "mongoose": "^6.1.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.17.2"
   }
 }

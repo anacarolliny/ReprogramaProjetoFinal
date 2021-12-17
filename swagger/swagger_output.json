@@ -1,0 +1,405 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "API Elo",
+    "description": "Api que visa trazer uma dinâmica mais consistente para a ONG e suas participantes, sendo o “elo”; ponto entre a ONG, profissionais voluntários e participantes do projeto. "
+  },
+  "host": "localhost:4000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+   
+    "/api/profissionais/": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista com todos os profissionais cadastrados, encontrar também por palavras chaves pelos campos : profissao, área de atuação e nome. ",
+        "parameters": [
+          {
+            "name": "profissao",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "area",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "nome",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [],
+        "description": "Cadastrar profissionais voluntários, insira os dados nos campos abaixo:",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "Lucca Sebastião"
+                },
+                "contato": {
+                  "example": "8888-7777"
+                },
+                "email": {
+                  "example": "lucca@teste.com"
+                },
+                "profissao": {
+                  "example": "professor"
+                },
+                "area": {
+                  "example": "educação"
+                },
+                "informacoes": {
+                  "example": "Dá Aulas para turmas de Ensino Médio"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/api/profissionais/profissao": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas das profissões cadastradas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/profissionais/area": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas das áreas de atuação cadastradas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/profissionais/nomes": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas dos nomes cadastrados",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/profissionais/{nome}": {
+      "put": {
+        "tags": [],
+        "description": "Atualizar cadastro de profissionais voluntários já cadastrados, por favor insira o nome que deseja alterar",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "Lucca Sebastião Figueira"
+                },
+                "contato": {
+                  "example": "8888-7777"
+                },
+                "email": {
+                  "example": "lucca@teste.com"
+                },
+                "profissao": {
+                  "example": "professor"
+                },
+                "area": {
+                  "example": "educação"
+                },
+                "informacoes": {
+                  "example": "Dá Aulas para turmas de Ensino Médio e Cursinho"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "Remover cadastro de profissionais voluntários, por favor insira o nome do cadastro que deseja excluir",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/participantes/": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista com todos os participantes cadastrados, encontrar também por palavras chaves pelos campos : idade, escolaridade e genero. ",
+        "parameters": [
+          {
+            "name": "idade",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "escolaridade",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "genero",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [],
+        "description": "Cadastrar participantes, insira os dados nos campos abaixo:",
+        "parameters": [
+          
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "Carla Martins"
+                },
+                "dataNascimento": {
+                  "example": "13/09/2013"
+                },
+                "idade": {
+                  "example": "21"
+                },
+                "genero": {
+                  "example": "Feminino"
+                },
+                "escolaridade": {
+                  "example": "Fundamental"
+                },
+                "contato": {
+                  "example": "9999-9999"
+                },
+                "dataDeEntrada": {
+                  "example": "Fundamental"
+                },
+                "informacoesNecessarias": {
+                  "example": "Precisando de cuidados terapeuticos, psicológicos e fisícos"
+                },
+                "itensNecessarios": {
+                  "example": "Remedios e Perucas"
+                },
+                "informacoesAdicionais": {
+                  "example": "Roupas"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/api/participantes/idade": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas das idades cadastradas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/participantes/escolaridade": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas das escolaridades",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/participantes/informacoes": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas das informações",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/participantes/genero": {
+      "get": {
+        "tags": [],
+        "description": "Gerar lista apenas dos generos cadastrados",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/participantes/{nome}": {
+      "put": {
+        "tags": [],
+        "description": "Atualizar cadastro de participantes, por favor insira o nome que deseja alterar.",
+        "parameters":[
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "Carla Martins Caxias"
+                },
+                "dataNascimento": {
+                  "example": "13/09/2013"
+                },
+                "idade": {
+                  "example": "21"
+                },
+                "genero": {
+                  "example": "Feminino"
+                },
+                "escolaridade": {
+                  "example": "Fundamental"
+                },
+                "contato": {
+                  "example": "9999-9999"
+                },
+                "dataDeEntrada": {
+                  "example": "Fundamental"
+                },
+                "informacoesNecessarias": {
+                  "example": "Precisando de cuidados terapeuticos, baixa autoestima, necessatida muito de ajuda psicológica e fisícos por conta de dores na cabeça"
+                },
+                "itensNecessarios": {
+                  "example": "Remedios e Perucas"
+                },
+                "informacoesAdicionais": {
+                  "example": "Roupas"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "Remover cadastro de participantes, por favor insira o nome do cadastro que deseja excluir.",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
