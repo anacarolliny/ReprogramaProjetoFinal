@@ -4,7 +4,7 @@ const controller = require('../controllers/profissionaisController')
 
 
 router.get('/', controller.getAll)
-router.get('/buscar/:id', controller.get)
+//router.get('/buscar/:id', controller.get)
 router.get('/profissao', controller.getProfissao)
 router.get('/area', controller.getArea)
 router.get('/nomes', controller.getNome)

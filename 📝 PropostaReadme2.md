@@ -448,6 +448,23 @@ Falta colocar o POST, PUT, DELETE
 
 <br>
 
+### Participantes
+* [Listagem de participantes](#part)
+* [Filtra participantes pela idade](#part_filtro1)
+* [Filtra participantes pela escolaridade](#part_filtro2)
+* [Filtra participantes pelas informacoesNecessarias](#part_filtro3)
+* [Filtra participantes pelos itensNecessarios](#part_filtro4)
+* [Filtra participantes pelo genero](#part_filtro5)
+* [Retorna todas as idades cadastradas](#part_retr1)
+* [Retorna todas as escolaridades cadastradas](#part_retr2)
+* [Retorna todas as informacoes cadastradas](#part_retr3)
+* [Retorna todas as informacoes cadastradas](#part_retr4)
+* [Retorna todas os generos cadastradas](#part_retr5)
+* [Retorna todas os itens necessarios cadastradas](#part_retr5)
+* [Cadastro de participantes](#cadastro_part)
+* [Atualização de Cadastro](#atualizacao_cadastro_part)
+* [Deletar Cadastro](#deletar_part)
+
 <br>
 
  ## ✅ Model de participantesCollection
@@ -555,9 +572,9 @@ Falta colocar o POST, PUT, DELETE
         "escolaridade": "Fundamental",
         "contato": "92996122265",
         "dataDeEntrada": "30/11/2020",
-        "informacoesNecessarias": "Estava atravessando com o barco do pai para ir a escola",
-        "itensNecessarios": "Advogado para conseguir direitos",
-        "informacoesAdicionais": "Roupas",
+        "informacoesNecessarias": "Advogado para conseguir direitos",
+        "itensNecessarios": "Roupas",
+        "informacoesAdicionais": "Está em ano letivo",
         "criadoEm": "2021-12-12T17:41:58.710Z",
         "atualizadoEm": "2021-12-12T17:41:58.710Z",
         "__v": 0
@@ -613,9 +630,9 @@ Falta colocar o POST, PUT, DELETE
         "escolaridade": "Fundamental",
         "contato": "92996122265",
         "dataDeEntrada": "30/11/2020",
-        "informacoesNecessarias": "Estava atravessando com o barco do pai para ir a escola",
-        "itensNecessarios": "Advogado para conseguir direitos",
-        "informacoesAdicionais": "Roupas",
+        "informacoesNecessarias": "Advogado para conseguir direitos",
+        "itensNecessarios": "Roupas",
+        "informacoesAdicionais": "Está em ano letivo",
         "criadoEm": "2021-12-12T17:41:58.710Z",
         "atualizadoEm": "2021-12-12T17:41:58.710Z",
         "__v": 0
