@@ -5,21 +5,9 @@
 
 
 
-># Curae - Apoio Mutuo aos seus semelhantes
+># elo - Apoio Mutuo aos seus semelhantes 
 
-Api que visa trazer mais visibilidade para a ONG e suas participantes, sendo o elo/ ponto entre profissionais voluntários e participantes do projeto.
-
-What is Lorem Ipsum?
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-># 🏪 API - 
-
-
-Why do we use it?
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+Api que visa trazer uma dinâmica mais consistente para a ONG e suas participantes, sendo o “elo”; ponto entre a ONG, profissionais voluntários e participantes do projeto.
 
 
 ## Índice do Projeto
@@ -38,38 +26,51 @@ It is a long established fact that a reader will be distracted by the readable c
 <div id='proposta'/>
 
 ## 📝 Proposta 
-Este é um repositório referente ao projeto final do curso de BackEnd da [Reprograma](https://reprograma.com.br/) sobre NodeJS </br>
-A proposta desse projeto é desenvolver um software para demonstrar os nossos conhecimentos adquiridos durante o curso.
+Este é um repositório referente ao projeto final do curso de Back-End da Reprograma. 
+A proposta desse projeto é desenvolver um software para demonstrar os nossos conhecimentos adquiridos durante o curso. 
 
-Na ocasião refleti sobre qual assunto ou causa poderia tentar apoiar e talvez trazer algum tipo de solução ou até visibilidade para a situação e atual história de cada uma das participantes.
+Na ocasião refleti sobre qual assunto ou causa poderia tentar apoiar e talvez trazer um suporte  ou até maior visibilidade para a situação da ONG e da atual história de cada uma das participantes. 
 
 ---
 
 <div id='introducao'/>
 
  ## 💡 Introdução 
- Tive conhecimento de uma ONG através do trabalho voluntário de minha mãe, como assistente social ela auxiliava as mulheres que eram integrantes desta ONG que chegavam pedindo ajuda pois era um dos lugares do Pará que dava atenção para pessoas em sua maioria mulheres vitimas de escalpelamento. A maioria do apoio era em parcerias e os unicos tratamentos no máximo eram apenas os cuidados com o Hospital local, mas elas por serem ribeirinhas com acessos muito precarios em sua região de moraria(Interior do Pará) quase nunca conseguiam auxilio do governo, estrutura ou ajuda que fosse, fisica, psicologica ou social.
+ Em  minha cidade tem uma ONG que atende pessoas vítimas de escalpelamento (vulção  parcial ou total dos cabelos e do couro cabeludo de forma abrupta e inesperada ). Conheci essa ONG através de minha mãe, que é Assistente Social, e prestou serviços voluntários nesse local. 
 
-Com essa realidade eu perguntava para minha mãe se a ONG tinha uso de tecnologia para agilizar o processo de auxilio dessas participantes, e a resposta foi que apenas utilizavam arquivos totalmente ainda de papel.
+Tive a oportunidade de ouvir ela contar que ao participar de uma ação social, promovida pela ONG. Se deparou com mulheres sofridas e sem recursos financeiros, mulheres em sua maioria ribeirinhas, com moradias precárias e sem políticas governamentais voltadas para suas realidades. 
 
-Desde aquele momento fiquei refletindo sobre o assunto, e com este projeto agora tive a ideia de tentar pensar em algo que fosse util para essas pessoas envolvidas : participantes, voluntários e possivelmente empresas.
+Esta ONG, é a única da região norte que atende essas pessoas.  
+
+Sem muito apoio, a ONG disponibilizava as suas “participantes”, como eram chamadas as mulheres, jovens e crianças que faziam parte desse espaço, atendimento com profissionais voluntários, sendo esses: Psicólogo, orientação com Assistente Social, e ainda recebiam doação de alimentos, roupas, doação de perucas além de palestras e mini cursos para elevar a auto estima. 
+
+Após vivenciar um pouco desta realidade, indaguei a minha mãe a respeito da dinâmica do atendimento . Pude perceber que a ONG só dispunha de arquivos físicos, e com  tecnologia bem básica. A partir desse contato com a ONG, refleti sobre o assunto; Sabendo que a tecnologia  é necessária, no que tange em agilizar o processo de auxilio às participantes, pretendo com esse projeto, alcançar algo que seja útil no tocante a visibilidades entre as partes envolvidas (participantes, voluntários, doadores), alem de expandir as chances de capitação de novos profissionais voluntários, tais como: fisioterapeutas, professores, cirurgião plástico e possíveis empresas. 
+
 
 ---
 
 <div id='objetivo'/>
 
  ### 🎯 Objetivo
- O objetivo desse projeto é desenvolver um serviço HTTP que gere maior visibilidade para a ONG, unindo e integrando profissionais voluntários, participantes e possiveis empresas e doações. Criando um sistema que tenha funcionalidades que atendam estas necessidades e demandas dos seguintes requisitos:
+O objetivo desse projeto é desenvolver um serviço HTTP que gere maior visibilidade e dinâmica para a ONG, unindo e integrando profissionais voluntários, participantes e possíveis empresas e doações. Criando um sistema funcional, atendendo as necessidades e demandas dos seguintes requisitos: 
 
- - Adiciona um produto na lista de compra do cliente;
+    .Cadastrar participantes. 
 
- - Cadastrar profissionais voluntários
+    .Gerar listas de participantes por: idade, escolaridade, informações e gênero. 
 
- - Gerar listas desses profissionais por, área de atuação, profissão e nome a fim de simplificar o processo de integração entre necessidades da ONG, das participantes e dos voluntários
+    .Remover cadastro de participantes. 
 
- - Remover cadastro de profissionais voluntários.
+    .Atualizar cadastro de participantes. 
 
- - Atualizar cadastro de profissionais voluntários.
+    .Cadastrar profissionais voluntários. 
+
+    .Gerar listas desses profissionais por: área de atuação, profissão e nome. 
+
+    .Remover cadastro de profissionais voluntários. 
+
+    .Atualizar cadastro de profissionais voluntários já cadastrados. 
+
+    .Simplificar o processo de integração entre as necessidades da ONG, das participantes com os voluntários. 
 
 ---
 
@@ -108,12 +109,10 @@ Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao context
    |    |
    |    |- 📁 configs
    |         |- 📑 database.js
-   |         |- 📑 comentariosControllers.js
-   |         |- 📑 livrosControllers.js 
    |
    |    |- 📁 controllers
    |         |- 📑 participantesController.js
-   			 |- 📑 profissionaisController.js 	
+   			       |- 📑 profissionaisController.js 	
    |
    |    |- 📁 models
    |         |- 📑 participantesSchema.js
@@ -126,6 +125,8 @@ Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao context
    |         
    |
    |    |- 📑 app.js
+   |-  📁 swagger
+        |- 📑 swagger_output.json
    |    
    |
    |
@@ -134,8 +135,10 @@ Para o desenvolvimento do projeto foi utilizado tecnologias adequadas ao context
    |- 📑 .gitignore
    |- 📑 package-lock.json
    |- 📑 package.json
+   |- 📑 Procfile
       |- 📑 README.md
    |- 📑 server.js
+   |- 📑 swagger.js
 
 ```
          
@@ -165,7 +168,7 @@ npm i
 ### 3º Passo - Configurar o ambiente
 Para configurar o ambiente é necessário duplicar o arquivo `.env.example` e renomea-lo somente para `.env`.</br>
 Em seguida, altere as informações desse arquivo `.env` para as informações correspondentes a sua máquina e e inclua as variáveis e os valores
-MONGODB_URL = URL do MongoDb Atlas Banco de dados orientado a documentos e interface na nuvem.
+MONGO_URI = URL do MongoDb Atlas Banco de dados orientado a documentos e interface na nuvem.
 
 ### 4º Passo - Executando a aplicação
 Depois de tudo configurado, é hora de rodar a nossa aplicação, para executá-la basta digitar o seguinte comando no terminal:
@@ -175,10 +178,10 @@ npm start
 Após esse comando o servidor irá inicializar e então aparecerá as mensagens que esse processo foi realizado com sucesso em seguida aparecerá dois links, como na imagem a seguir, sendo um link referente a aplicação e outra ao swagger, um atalho para acessá-las no browser e ter uma melhor visualização basta estar com o mouse sobre o link desejado e digitar `ctrl + click`.
 
 <p align="center">
-<img src="https://i.imgur.com/c00dCS9.png">
+<img src="https://i.imgur.com/w8bVJGr.png">
 </p>
 
-
+Para acessar via Heroku, acesse o [link da API](https://reprogramaprojetofinal.herokuapp.com/)
 ---
 
 <div id='rotas'/>
@@ -226,7 +229,7 @@ Método: `GET`
 
 ### 📥 Requisição (rota):
 ```
-http://localhost:4000/api/profissionais
+http://localhost:4000/api/profissionais ou https://reprogramaprojetofinal.herokuapp.com/api/profissionais
 ```
 
 ### 📤 Resposta:
@@ -342,14 +345,14 @@ Exemplo:
 
 <div id='prof_filtro1'/>
 
-##  Filtra profissionais pela profissão ~falta colocar
-Filtra profissionais pela profissão
+##  Filtra profissionais pela profissão 
+Gerar listas desses profissionais por: profissão.
 
 Método: `GET`
 
 ### 📥 Requisição (rota):
 ```
-http://localhost:4000/api/profissionais?profissao=Fisioterapeura
+http://localhost:4000/api/profissionais?profissao=Fisioterapeuta 
 ```
 
 ### 📜 Parâmetros (body):
@@ -382,9 +385,9 @@ Exemplo:
 <div id='prof_filtro2'/>
 
 
-##  Filtra profissionais pela Área de Atuação ~falta colocar
+##  Filtra profissionais pela Área 
 
-Filtra profissionais pela Área de Atuação
+Gerar listas desses profissionais por: Área de atuação.
 
 Método: `GET`
 
@@ -440,9 +443,9 @@ Exemplo:
 <div id='prof_filtro3'/>
 
 
-##  Filtra profissionais pelo Nome ~falta colocar
+##  Filtra profissionais pelo Nome
 
-Filtra profissionais pelo Nome
+Gerar listas desses profissionais por: Nome.
 
 Método: `GET`
 
@@ -486,9 +489,9 @@ Exemplo:
 <div id='prof_retr1'/>
 
 
-##  Retorna apenas as profissoes cadastradas ~falta colocar
+##  Retorna apenas as profissões cadastradas
 
-Retorna apenas as profissoes cadastradas
+Gera lista apenas as profissões cadastradas
 
 Método: `GET`
 
@@ -551,9 +554,10 @@ Exemplo:
 <div id='prof_retr2'/>
 
 
-##  Retorna apenas as Áreas de Atuação cadastradas ~falta colocar
+##  Retorna apenas as Áreas de atuação 
 
-Retorna apenas as Áreas de Atuação cadastradas
+Gera lista apenas as Áeras de atuação cadastradas
+
 Método: `GET`
 
 ### 📥 Requisição (rota):
@@ -613,9 +617,10 @@ Exemplo:
 <div id='prof_retr3'/>
 
 
-##  Retorna apenas os nomes dos profissionais cadastrados ~falta colocar
+##  Retorna apenas os nomes cadastradas
 
-Retorna apenas os nomes dos profissionais cadastrados
+Gera lista apenas os nomes cadastrados
+
 Método: `GET`
 
 ### 📥 Requisição (rota):
@@ -787,7 +792,7 @@ Exemplo:
 <div id='part'/>
 
 ## 🏪 Listagem de Participantes
-Listagem de todos as participantes cadastradas na base de dados. 
+Listagem de todos os participantes cadastradas na base de dados. 
 
 Método: `GET`
 
@@ -872,8 +877,8 @@ Exemplo:
 
 <div id='part_filtro1'/>
 
-##  Filtra participantes pela idade ~falta colocar
-Filtra participantes pela idade
+##   Filtra participantes pela idade
+Gerar listas desses participantes por: idade.
 
 Método: `GET`
 
@@ -917,9 +922,8 @@ Exemplo:
 <div id='part_filtro2'/>
 
 
-##  Filtra participantes pela Escolaridade ~falta colocar
-
-Filtra participantes pela Área de Atuação
+##  Filtra participantes pela Escolaridade
+Gerar listas desses participantes por: escolaridade.
 
 Método: `GET`
 
@@ -988,9 +992,9 @@ Exemplo:
 <div id='part_filtro3'/>
 
 
-##  Filtra participantes pelo Genero ~falta colocar
+##  Filtra participantes por Genero
 
-Filtra participantes pelo Genero 
+Gerar listas desses participantes por: genero.
 
 Método: `GET`
 
@@ -1040,9 +1044,9 @@ Exemplo:
 <div id='part_retr1'/>
 
 
-##  Retorna todas as idades cadastradas ~falta colocar
+##  Retorna apenas as idades cadastradas
 
-Retorna apenas as idades cadastradas
+Gera lista apenas das idades cadastradas
 
 Método: `GET`
 
@@ -1083,9 +1087,10 @@ Exemplo:
 <div id='part_retr2'/>
 
 
-##  Retorna apenas o campo escolaridade dos participantes cadastrados ~falta colocar
+##  Retorna apenas os campos de escolaridades cadastradas
 
-Retorna apenas o campo escolaridade dos participantes cadastrados
+Gera lista apenas com  o escolaridade cadastrados
+
 Método: `GET`
 
 ### 📥 Requisição (rota):
@@ -1120,9 +1125,10 @@ Exemplo:
 <div id='part_retr3'/>
 
 
-##  Retorna apenas o campo com as informações dos participantes cadastrados ~falta colocar
+##  Retorna apenas as informações
 
-Retorna todas as informações na base de dados
+Gera lista apenas com informações apenas cadastrados
+
 Método: `GET`
 
 ### 📥 Requisição (rota):
@@ -1165,9 +1171,10 @@ Exemplo:
 <div id='part_retr4'/>
 
 
-##  Retorna apenas o camp genero dos participantes cadastrados ~falta colocar
+##  Retorna apenas os genero cadastrados
 
-Retorna apenas o campo participante cadastrados
+Gera lista apenas genero cadastrados
+
 Método: `GET`
 
 ### 📥 Requisição (rota):
@@ -1340,7 +1347,30 @@ Exemplo:
 
 ## 👨‍👩‍👧‍👦 Agradecimentos  
 
--
+
+### Gostaria de começar aqui agradecendo a oportunidade de ter tido ao estar aqui nesse projeto incrível que é a reprograma, nunca imaginei ter a chance de ter participado de algo ão incrível.ღ
+
+<br>
+
+### Sou totalmente agradecida á minha mãe que sempre me incentivou e até o ultimo momento me ajudou a chegar até aqui. ♥
+<br>
+
+### A cada professora que com muito carinho ensinou cada aula com toda paciência e afeto a cada uma de nós. 💛
+
+<br>
+
+### A cada monitora que esteve conosco em cada momento dessa caminhada.💙
+
+<br>
+
+### A nossa facilitadora Raquelzinha que sempre cuidou, ajudou e deu palavras de forças a cada uma de nós. 💖
+
+<br>
+
+### E a TODAS as meninas, colegas, parceiras, amigas que ganhei desse curso. Espero que esse seja o fim de um ciclo mas um inicio de uma nova jornada para cada uma de nós.! <3 💜
+
+<br>
+
 
 
 
