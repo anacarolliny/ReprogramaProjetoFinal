@@ -1279,8 +1279,7 @@ http://localhost:4000/api/participante/:nome
 
 ### 📜 Parâmetros (body):
 *Parâmetros obrigatórios.
-
-​```json
+```json
 {
     "nome": "Carla Martins Ferreira",
     "dataNascimento": "13/09/2013",
@@ -1356,6 +1355,11 @@ Exemplo:
 <br>
 
 ### Sou totalmente agradecida á minha mãe que sempre me incentivou e até o ultimo momento me ajudou a chegar até aqui. ♥
+<br>
+
+<br>
+
+### Sou muito agradecida e feliz por ter um #prirmão que me incentivou noite e dia pra dar esse passo e hoje estar aqui finalizando este curso ♥
 <br>
 
 ### A cada professora que com muito carinho ensinou cada aula com toda paciência e afeto a cada uma de nós. 💛
