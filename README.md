@@ -5,10 +5,9 @@
 
 
 
-># elo - Apoio Mutuo aos seus semelhantes 
+># elo - Apoio Mútuo aos seus semelhantes 
 
-Api que visa trazer uma dinâmica mais consistente para a ONG e suas participantes, sendo o “elo”; ponto entre a ONG, profissionais voluntários e participantes do projeto.
-
+Api que visa trazer uma dinâmica mais consistente para a ONG e suas participantes, sendo o “elo”, ponto entre a ONG, profissionais voluntários e participantes do projeto.
 
 ## Índice do Projeto
 
@@ -26,33 +25,33 @@ Api que visa trazer uma dinâmica mais consistente para a ONG e suas participant
 <div id='proposta'/>
 
 ## 📝 Proposta 
-Este é um repositório referente ao projeto final do curso de Back-End da Reprograma. 
-A proposta desse projeto é desenvolver um software para demonstrar os nossos conhecimentos adquiridos durante o curso. 
+Este é um repositório referente ao projeto final do curso de BackEnd da Reprograma sobre NodeJS
+A proposta desse projeto é desenvolver um software para demonstrar os nossos conhecimentos adquiridos durante o curso
 
-Na ocasião refleti sobre qual assunto ou causa poderia tentar apoiar e talvez trazer um suporte  ou até maior visibilidade para a situação da ONG e da atual história de cada uma das participantes. 
+Na ocasião refleti sobre qual assunto ou causa poderia tentar apoiar e talvez trazer um suporte  ou até maior visibilidade para a situação da ONG e da atual história de cada uma das participantes.
 
 ---
 
 <div id='introducao'/>
 
  ## 💡 Introdução 
- Em  minha cidade tem uma ONG que atende pessoas vítimas de escalpelamento (vulção  parcial ou total dos cabelos e do couro cabeludo de forma abrupta e inesperada ). Conheci essa ONG através de minha mãe, que é Assistente Social, e prestou serviços voluntários nesse local. 
+ Em  minha cidade tem uma ONG que atende pessoas vítimas de escalpelamento (vulção  parcial ou total dos cabelos e do couro cabeludo de forma abrupta e inesperada ). Conheci essa ONG através de minha mãe, que é Assistente Social, e prestou serviços voluntários nesse local
+ 
+Tive a oportunidade de ouvir o relato dela sobre uma ação social, promovida pela ONG. Em seu relato ela narra que se deparou com mulheres sofridas e sem recursos financeiros, mulheres em sua maioria ribeirinhas, com moradias precárias e sem políticas governamentais voltadas para suas realidades.
 
-Tive a oportunidade de ouvir ela contar que ao participar de uma ação social, promovida pela ONG. Se deparou com mulheres sofridas e sem recursos financeiros, mulheres em sua maioria ribeirinhas, com moradias precárias e sem políticas governamentais voltadas para suas realidades. 
+Esta ONG, é a única da região norte que atende essas pessoas. 
+Sem muito apoio, a ONG disponibilizava as suas “participantes”, como eram chamadas as mulheres, jovens e crianças que faziam parte desse espaço, atendimento com profissionais voluntários, sendo esses: Psicólogo, orientação com Assistente Social, e ainda recebiam doação de alimentos, roupas, doação de perucas além de palestras e mini cursos para elevar a auto estima.
 
-Esta ONG, é a única da região norte que atende essas pessoas.  
-
-Sem muito apoio, a ONG disponibilizava as suas “participantes”, como eram chamadas as mulheres, jovens e crianças que faziam parte desse espaço, atendimento com profissionais voluntários, sendo esses: Psicólogo, orientação com Assistente Social, e ainda recebiam doação de alimentos, roupas, doação de perucas além de palestras e mini cursos para elevar a auto estima. 
-
-Após vivenciar um pouco desta realidade, indaguei a minha mãe a respeito da dinâmica do atendimento . Pude perceber que a ONG só dispunha de arquivos físicos, e com  tecnologia bem básica. A partir desse contato com a ONG, refleti sobre o assunto; Sabendo que a tecnologia  é necessária, no que tange em agilizar o processo de auxilio às participantes, pretendo com esse projeto, alcançar algo que seja útil no tocante a visibilidades entre as partes envolvidas (participantes, voluntários, doadores), alem de expandir as chances de capitação de novos profissionais voluntários, tais como: fisioterapeutas, professores, cirurgião plástico e possíveis empresas. 
-
+Após ouvir um pouco desta realidade, indaguei a minha mãe a respeito da dinâmica do atendimento . Pude perceber que a ONG só dispunha de arquivos físicos, e com  tecnologia básica, 
+A partir desse momento, refleti sobre o assunto; Sabendo que a tecnologia  é necessária, no que tange em agilizar o processo de auxilio às participantes, pretendo com esse projeto, alcançar algo que seja útil no tocante a visibilidades entre as partes envolvidas (participantes, voluntários, doadores), além de expandir as oportunidaes de capitação de novos profissionais voluntários, tais como: fisioterapeutas, professores, cirurgião plástico e possíveis empresas.
 
 ---
 
 <div id='objetivo'/>
 
  ### 🎯 Objetivo
-O objetivo desse projeto é desenvolver um serviço HTTP que gere maior visibilidade e dinâmica para a ONG, unindo e integrando profissionais voluntários, participantes e possíveis empresas e doações. Criando um sistema funcional, atendendo as necessidades e demandas dos seguintes requisitos: 
+ 
+O objetivo desse projeto é desenvolver um serviço HTTP que gere maior visibilidade e dinâmica para a ONG, unindo e integrando profissionais voluntários, participantes e possíveis empresas e doações. Criando um sistema funcional, atendendo as necessidades e demandas dos seguintes requisitos:
 
     .Cadastrar participantes. 
 
