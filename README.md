@@ -1349,11 +1349,11 @@ Exemplo:
 ## 👨‍👩‍👧‍👦 Agradecimentos  
 
 
-### Gostaria de começar aqui agradecendo a oportunidade de ter tido ao estar aqui nesse projeto incrível que é a reprograma, nunca imaginei ter a chance de ter participado de algo ão incrível.ღ
+### Gostaria de começar agradecendo a oportunidade de ter estado nessa jornada com cada pessoa que me trouxe até esse momento, não tenho nem palavras para descrever como estou feliz por estar entregando esse projeto que não envolveu só minha pessoa, mas tantas que somaram nessa trajetória incrível que é a reprograma, nunca imaginei ter a chance de ter participado de algo assim. ღ
 
 <br>
 
-### Sou totalmente agradecida á minha mãe que sempre me incentivou e até o ultimo momento me ajudou a chegar até aqui. ♥
+### Totalmente agradecida á minha mãe que sempre me incentivou e até o ultimo momento me ajudou a chegar até aqui. ♥
 <br>
 
 <br>
